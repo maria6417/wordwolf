@@ -10,20 +10,9 @@ import Main from './Main';
 
 export default function App() {
   return (
-    <Router>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/Main">Main</Link>
+        <Link to={`sample/1`}>Click Here</Link>
+        <Link to={`home`}>Home</Link>
       </div>
-
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/Main">
-          <Main />
-        </Route>
-      </Switch>
-    </Router>
   )
 }

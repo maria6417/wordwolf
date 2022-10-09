@@ -4,4 +4,4 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.listen(3300, () => console.log('server listening'));
+app.listen(process.env.PORT || 3300, () => console.log('server listening'));
